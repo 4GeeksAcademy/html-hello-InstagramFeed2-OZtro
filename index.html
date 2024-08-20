@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>InstagramFeedbyOztro</title>
+</head>
+
+
+
+<body>
+
+  <nav class="navbar navbar-light bg-primary py-4">
+    <div class="container-fluid">
+      <div class="d-flex w-100 justify-content-between">
+        <div>
+          <i class="fa-brands fa-instagram fa-xl text-light"></i>
+          <spam class="d-inline-block text-light fs-5">Instagram</spam>
+        </div>
+
+
+        <div class="d-flex" align-right justify-content-end>
+
+          <button type="button" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new Post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Caption:</label>
+                      <textarea class="form-control" id="message-text">Add the caption of your post here</textarea>
+                    </div>
+                  </form>
+                  <div class="mb-3">
+                    <button type="button" class="btn bg-light border-1 border-light"><i
+                        class="fa-solid fa-camera"></i></button>
+                    <button type="button" class="btn bg-light border-1 border-light"><i
+                        class="fa-solid fa-location-dot"></i></button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn bg-success text-light">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav-pill -->
+
+  <ul class="nav nav-pills mb-3 justify-content-center mt-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active btn btn-transparent" id="pills-home-tab" data-bs-toggle="pill"
+        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+          class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+          class="fa-solid fa-square"></i></button>
+    </li>
+
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/33/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/100/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/6/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/1080/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/140/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/600/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/800/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/600/300/300" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="w-100 mb-4" src="https://picsum.photos/id/700/300/300" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 border p-0 mb-4">
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <h3>My Crazy dog spark!</h3>
+              <spam>08/26</spam>
+            </div>
+            <div>
+              <img class="w-100 mb-4" src="https://picsum.photos/id/237/300/300" alt="">
+            </div>
+            <div class="p-3">
+              <p><strong>205 Likes</strong></p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, cumque.</p>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-12 col-md-6 border p-0 mb-4">
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <h3>The greatness of Avila</h3>
+              <spam>12/24</spam>
+            </div>
+            <div>
+              <img class="w-100 mb-4" src="https://picsum.photos/id/28/300/300" alt="">
+            </div>
+            <div class="p-3">
+              <p><strong>205 Likes</strong></p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, cumque.</p>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-12 col-md-6 border p-0 mb-4">
+            <div class="d-flex justify-content-between align-items-center p-3">
+              <h3>homework...</h3>
+              <spam>05/24</spam>
+            </div>
+            <div>
+              <img class="w-100 mb-4" src="https://picsum.photos/id/6/300/300" alt="">
+            </div>
+            <div class="p-3">
+              <p><strong>205 Likes</strong></p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, cumque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Nav-pill -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
