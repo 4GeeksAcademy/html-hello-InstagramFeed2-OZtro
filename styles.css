@@ -1,0 +1,14 @@
+#pills-home-tab{
+    color: grey;
+    background-color: transparent;
+  }
+  #pills-home-tab.active{
+    color: #0d6efd;
+  }
+  #pills-profile-tab{
+    color: grey;
+    background-color: transparent;
+  }
+  #pills-profile-tab.active{
+    color: #0d6efd;
+  }
